@@ -1,0 +1,63 @@
+.mdc-card {
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+.template {
+    display: none !important;
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: Roboto, sans-serif;
+    opacity: .6;
+    margin-top: none;
+    margin-bottom: none;
+}
+
+h3 {
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+
+}
+
+.demo-card__title {
+    font-family: Roboto, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: .0125em;
+    text-decoration: inherit;
+    text-transform: inherit;
+}
+.demo-card__subhead {
+    font-family: Roboto, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    letter-spacing: .0178571429em;
+    text-decoration: inherit;
+    text-transform: inherit;
+    opacity: .6;
+}
+
+.mdc-card-wrapper__text-section {
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-right: 16px;
+}
+
+
+body {
+    margin-left: 5%;
+}

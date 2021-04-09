@@ -1,1 +1,84 @@
-"hello world" 
+<!-- Tomasz Hulka IT202 Project 2 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8' />
+    <title>Tomasz Hulka</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="projects.js"></script>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+
+<body>
+
+    <h1> Tomasz Hulka </h1>
+
+    <h2> thulka20@gmail.com </h2>
+    <h2> BS of Computer Science: UIC (Expected May 2021) </h2>
+
+    <h3> Projects </h3>
+        
+    <div class="mdc-card template">      
+        <div class="mdc-card__media mdc-card__media--16-9" style="background:url(/images/1.png); background-size: cover;">
+        </div>
+      
+        <div class="mdc-card-wrapper__text-section">
+          <div class="demo-card__title">Card title</div>
+          <div class="demo-card__subhead">Secondary text</div>
+          <div class="demo-card__subhead">Secondary text</div>
+
+        </div>
+          
+        <div class="mdc-card__actions">
+            <button class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded">
+                <span class="mdc-button__label">Action 1</span>
+                <div class="mdc-button__ripple"></div>
+            </button>
+            <button class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded">
+                <span class="mdc-button__label">Action 2</span>
+                <div class="mdc-button__ripple"></div>
+            </button>
+        </div>
+        
+    </div>
+      
+    
+
+    <script>
+    
+        projects.forEach((project) => {
+
+            if(project["display"] == true) {
+                let clone = document.querySelector('.template').cloneNode(true);
+                clone.classList.remove('template');
+
+                clone.querySelector('.mdc-card__media').style.background = `url(${project["image"]})`;
+                clone.querySelector('.mdc-card__media').style.backgroundSize = 'cover';
+
+                clone.querySelector('.demo-card__title').innerHTML = project["project_name"];
+                clone.querySelectorAll('.demo-card__subhead')[0].innerHTML = project["description"];
+                clone.querySelectorAll('.demo-card__subhead')[1].innerHTML = "Tech:" + project["technologies"];
+
+                clone.querySelectorAll('.mdc-button__label')[0].innerHTML = "View repo";
+                clone.querySelectorAll('.mdc-button')[0].addEventListener( 'click', (event) => {window.open(project['repo_link'])});
+
+                clone.querySelectorAll('.mdc-button__label')[1].innerHTML = "View page";
+                clone.querySelectorAll('.mdc-button')[1].addEventListener( 'click', (event) => {window.open(project['page_link'])});
+                document.body.append(clone);
+            }
+            
+        })
+
+    
+       
+
+
+    </script>
+</body>
+
+</html>

@@ -1,15 +1,3 @@
-/* 
-project name
-brief description
-technologies/languages used
-link to repo
-link to functioning page
-image (a screen grab of the project would be good)
-display (a boolean indicating whether or not to show this item.)
-
-
-*/
-
 
 let projects = [
 
@@ -19,7 +7,7 @@ let projects = [
         "technologies" : "JS, HTML, CSS, React, React-MDL",
         "repo_link" : "https://github.com/thulka2/valorskins",
         "page_link" : "https://valorskins.com/",
-        "image" : "",
+        "image" : "./images/1.png",
         "display" : true
 
     },
@@ -29,7 +17,7 @@ let projects = [
         "technologies" : "JS, HTML, CSS, PWA",
         "repo_link" : "https://github.com/thulka2/IT202-Spring2021-project2",
         "page_link" : "https://thulka2.github.io/IT202-Spring2021-project2/",
-        "image" : "",
+        "image" : "./images/2.png",
         "display" : true
 
     },
@@ -39,11 +27,20 @@ let projects = [
         "technologies" : "JS, HTML, CSS, Maps API",
         "repo_link" : "https://github.com/thulka2/IT202-Spring2021-project1",
         "page_link" : "https://thulka2.github.io/IT202-Spring2021-project1/",
-        "image" : "",
+        "image" : "./images/3.png",
         "display" : true
 
     },
-    {}
+    {
+        "project_name" : "Cold Feet",
+        "description" : "A singleplayer videogame made in Unity that pins the player into a survival scenario at Glacier National Park",
+        "technologies" : "C#",
+        "repo_link" : "https://github.com/thulka2/ColdFeet",
+        "page_link" : "",
+        "image" : "",
+        "display" : false
+
+    }
 
 
 
