@@ -62,7 +62,7 @@
 
                 clone.querySelector('.demo-card__title').innerHTML = project["project_name"];
                 clone.querySelectorAll('.demo-card__subhead')[0].innerHTML = project["description"];
-                clone.querySelectorAll('.demo-card__subhead')[1].innerHTML = "Tech:" + project["technologies"];
+                clone.querySelectorAll('.demo-card__subhead')[1].innerHTML = "Tech: " + project["technologies"];
 
                 clone.querySelectorAll('.mdc-button__label')[0].innerHTML = "View repo";
                 clone.querySelectorAll('.mdc-button')[0].addEventListener( 'click', (event) => {window.open(project['repo_link'])});
