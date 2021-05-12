@@ -12,6 +12,16 @@ let projects = [
 
     },
     {
+        "project_name" : "Chicago Parks",
+        "description" : "An application for Chicagoans that are stuck at home looking for parks to visit in their area. Lets the user filter park data and store images and favorite parks.",
+        "technologies" : "JS, HTML, CSS, PWA, DexieDB, Device Hardware API, Maps API",
+        "repo_link" : "https://github.com/thulka2/IT202-Spring2021-BigProject",
+        "page_link" : "https://thulka2.github.io/IT202-Spring2021-BigProject/",
+        "image" : "./images/4.png",
+        "display" : true
+
+    },
+    {
         "project_name" : "Scrolling Things",
         "description" : "A scrolling game themed around the 'Stranger Things' show. Difficulty scales as game progresses.",
         "technologies" : "JS, HTML, CSS, PWA",
